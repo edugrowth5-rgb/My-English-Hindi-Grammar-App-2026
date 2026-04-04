@@ -6,12 +6,13 @@
 const cacheName = 'grammar-app-v1';
 const assets = [
   '/',
-  '/Gindex.html',
+  '/index.html',
   '/Gstyle.css',
   '/Gapp.js',
   '/Gsentence.js',
   '/Gsangya.js',
   '/GpartsOfSpeech.js',
+  'SHE.png'
   // यहाँ अपनी अन्य टॉपिक फाइल्स और लोगो के नाम भी जोड़ें
 ];
 
