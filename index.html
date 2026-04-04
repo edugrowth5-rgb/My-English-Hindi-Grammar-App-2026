@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Class - Grammar & व्याकरण</title>
+    <link rel="stylesheet" href="Gstyle.css">
+    <link rel="icon" type="image/x-icon" href="Gfavicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="Gfavicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="Gfavicon-16x16.png">
+
+<link rel="apple-touch-icon" sizes="180x180" href="Gapple-touch-icon.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="Glogo192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="Glogo512.png">
+
+<link rel="manifest" href="Gmanifest.json">
+
+<meta name="theme-color" content="#FF6B6B">
+</head>
+<body>
+    <header class="G-topbar">
+        <button id="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+        <div class="logo">Smart Class</div>
+        <div class="lang-controls">
+            <button onclick="switchLang('eng')">English</button>
+            <button onclick="switchLang('hin')">हिन्दी</button>
+        </div>
+    </header>
+
+    <div class="G-main-wrapper">
+        <aside id="G-sidebar" class="G-sidebar">
+            <div class="sidebar-header"><h3>विषय / Topics</h3></div>
+            <ul id="topic-list"></ul>
+        </aside>
+        <main class="G-content-area">
+            <div id="welcome-screen" class="card">
+                <h1>🌟 नमस्ते! Hello! 🌟</h1>
+                <p>चलो व्याकरण को मज़ेदार बनाते हैं!<br>Let's learn Grammar with fun!</p>
+                <img src="https://img.icons8.com/clouds/200/000000/bookmark.png" alt="Icon">
+            </div>
+            <div id="main-content"></div>
+        </main>
+    </div>
+
+    <script src="Gsentence.js"></script>
+    <script src="GpartsOfSpeech.js"></script>
+    <script src="Gtense.js"></script>
+    <script src="Gsangya.js"></script>
+    <script src="Gsarwanaam.js"></script>
+
+    <script src="Gapp.js"></script>
+    
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('Gsw.js')
+        .then(reg => console.log('Grammar App: Service Worker Registered! ✅', reg.scope))
+        .catch(err => console.log('Service Worker Registration Failed! ❌', err));
+    });
+  }
+</script>
+
+</body>
+</html>
