@@ -1,25 +1,25 @@
 {
   "icons": [
     {
-      "src": "Glogo192.png",
+      "src": "SHE.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any" 
     },
     {
-      "src": "Gmaskable192.png",
+      "src": "SHE.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable"
     },
     {
-      "src": "Glogo512.png",
+      "src": "SHE.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "Gmaskable512.png",
+      "src": "SHE.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
