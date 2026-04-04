@@ -12,7 +12,7 @@ const assets = [
   '/Gsentence.js',
   '/Gsangya.js',
   '/GpartsOfSpeech.js',
-  'SHE.png'
+  '1775329806019.png'
   // यहाँ अपनी अन्य टॉपिक फाइल्स और लोगो के नाम भी जोड़ें
 ];
 
