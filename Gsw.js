@@ -11,6 +11,13 @@ const assets = [
   '/Gapp.js',
   '/Gsentence.js',
   '/Gsangya.js',
+  '/GlingVachan.js',
+  '/Gkarak.js',
+  '/Gsarwanaam.js',
+  '/Gvisheshan.js',
+  '/Gkriya.js',
+  '/Gkaal.js',
+  '/Gavyay.js,
   '/GpartsOfSpeech.js',
   '1775329806019.png'
   // यहाँ अपनी अन्य टॉपिक फाइल्स और लोगो के नाम भी जोड़ें
