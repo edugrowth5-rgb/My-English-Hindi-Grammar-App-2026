@@ -49,15 +49,15 @@ Hindi.sandhi = {
             </div>
 
             <!-- व्यंजन और विसर्ग नियम -->
-            <div style="background: #34495e; color: white; padding: 25px; border-radius: 20px;">
-                <h3 style="color:#FFD93D; margin-top:0;">💡 व्यंजन और विसर्ग के प्रमुख नियम</h3>
-                <ul style="font-size:1.1rem; line-height:1.8;">
-                    <li><b>वर्ग के पहले वर्ण का तीसरे में बदलना:</b> दिक् + गंबर = <b>दिगंबर</b></li>
-                    <li><b>विसर्ग का 'र' होना:</b> निः + आशा = <b>निराशा</b></li>
-                    <li><b>विसर्ग का 'श/ष/स' होना:</b> निः + चल = <b>निश्चल</b></li>
-                </ul>
-            </div>
-        </section>
+<div style="background: #5C7AEA; color: white; padding: 25px; border-radius: 25px; margin-top: 30px; box-shadow: 0 8px 16px rgba(92, 122, 234, 0.3);">
+    <h3 style="color: #FFD93D; margin-top: 0; font-size: 1.8rem;">💡 व्यंजन और विसर्ग के प्रमुख नियम(Important Rules)</h3>
+    <ul style="font-size: 1.3rem; line-height: 1.8; list-style-type: disc; padding-left: 20px;">
+        <li>वर्ग के पहले वर्ण का तीसरे में बदलना: <b>दिक् + गंबर = दिगंबर</b></li>
+        <li>विसर्ग का 'र' होना: <b>निः + आशा = निराशा</b></li>
+        <li>विसर्ग का 'श/ष/स' होना: <b>निः + चल = निश्चल</b></li>
+    </ul>
+</div>
+</section>
 
         <!-- Quiz Panel (40 Questions - Master Level) -->
         <div class="quiz-panel" id="hindi-quiz-wrapper" style="background: #fff; padding: 35px; border-radius: 35px; border: 5px solid #4D96FF;">
