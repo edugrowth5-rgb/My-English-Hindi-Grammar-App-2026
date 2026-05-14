@@ -8,6 +8,14 @@ Hindi.sandhi = {
     title: "संधि: नियमों का विस्तृत विश्लेषण 🤝",
     content: `
         <section style="text-align: left; padding: 10px;">
+        
+        <div style="background: #fdfaf0; padding: 25px; border-radius: 25px; border: 2px solid #FFD93D; margin-bottom: 30px;">
+                <h2 style="color: #d4a017; font-size: 2.2rem; margin-top:0;">1. संधि की पूर्ण परिभाषा</h2>
+                <p style="font-size: 1.4rem; line-height: 1.8;">
+                    दो समीपवर्ती वर्णों (Letters) के परस्पर मेल से जो <b>विकार (परिवर्तन)</b> उत्पन्न होता है, उसे <b>संधि</b> कहते हैं। 
+                    सरल शब्दों में, जब दो ध्वनियाँ आपस में मिलती हैं और नया रूप लेती हैं।
+                </p>
+            </div>
             
             <!-- स्वर संधि के 5 उप-भेद -->
             <div style="background: #fff9f0; padding: 25px; border-radius: 25px; border: 2px solid #FFD93D; margin-bottom: 30px;">
@@ -17,31 +25,31 @@ Hindi.sandhi = {
                 <div style="margin-top:15px; display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:15px;">
                     <!-- 1. दीर्घ -->
                     <div style="background:white; padding:15px; border-radius:12px; border-top:5px solid #FF6B6B;">
-                        <b style="color:#FF6B6B;">A. दीर्घ संधि:</b><br>
+                        <b style="color:#FF6B6B;">1. दीर्घ संधि:समान स्वर मिलकर दीर्घ (बड़ा) हो जाते हैं।</b><br>
                         (अ/आ + अ/आ = आ)<br>
                         <i>उदा:</i> हिम + आलय = <b>हिमालय</b>
                     </div>
                     <!-- 2. गुण -->
                     <div style="background:white; padding:15px; border-radius:12px; border-top:5px solid #4D96FF;">
-                        <b style="color:#4D96FF;">B. गुण संधि:</b><br>
+                        <b style="color:#4D96FF;">2. गुण संधि:अ/आ के बाद इ/उ आने पर ए/ओ हो जाता है।</b><br>
                         (अ + इ = ए, अ + उ = ओ)<br>
                         <i>उदा:</i> नर + ईश = <b>नरेश</b>
                     </div>
                     <!-- 3. वृद्धि -->
                     <div style="background:white; padding:15px; border-radius:12px; border-top:5px solid #FFD93D;">
-                        <b style="color:#b8860b;">C. वृद्धि संधि:</b><br>
+                        <b style="color:#b8860b;">3. वृद्धि संधि:अ/आ के बाद ए/ऐ आने पर 'ऐ' और ओ/औ आने पर 'औ' हो जाता है।</b><br>
                         (अ + ए = ऐ, अ + ओ = औ)<br>
                         <i>उदा:</i> सदा + एव = <b>सदैव</b>
                     </div>
                     <!-- 4. यण -->
                     <div style="background:white; padding:15px; border-radius:12px; border-top:5px solid #6BCB77;">
-                        <b style="color:#2e7d32;">D. यण संधि:</b><br>
+                        <b style="color:#2e7d32;">4. यण संधि:इ/उ/ऋ के बाद अन्य स्वर आने पर य/व/र हो जाता है।</b><br>
                         (इ/उ + अन्य स्वर = य/व)<br>
                         <i>उदा:</i> सु + आगत = <b>स्वागत</b>
                     </div>
                     <!-- 5. अयादि -->
                     <div style="background:white; padding:15px; border-radius:12px; border-top:5px solid #9b59b6;">
-                        <b style="color:#9b59b6;">E. अयादि संधि:</b><br>
+                        <b style="color:#9b59b6;">5. अयादि संधि:ए/ऐ/ओ/औ के बाद अन्य स्वर आने पर अय/आय/अव/आव हो जाता है।</b><br>
                         (ए/ओ + अन्य स्वर = अय/अव)<br>
                         <i>उदा:</i> पो + अन = <b>पवन</b>
                     </div>
