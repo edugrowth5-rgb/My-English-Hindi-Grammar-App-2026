@@ -51,7 +51,7 @@ Hindi.karak = {
                 <p style="font-size: 1.2rem;"><b>C. कर्ता 'ने' का प्रयोग:</b> 'ने' का प्रयोग केवल सकर्मक क्रिया के साथ भूतकाल में होता है। वर्तमान और भविष्य में 'ने' लुप्त रहता है।</p>
             </div>
 
-            <h2 style="color: #333; font-size: 2rem; border-bottom: 3px solid #333; display: inline-block; margin: 30px 0 20px 0;">4. कारक उदाहरण (200 मुख्य वाक्य)</h2>
+            <h2 style="color: #333; font-size: 2rem; border-bottom: 3px solid #333; display: inline-block; margin: 30px 0 20px 0;">4. कारक उदाहरण (130 मुख्य वाक्य)</h2>
             <div style="height: 400px; overflow-y: auto; background: #fff; padding: 20px; border-radius: 20px; border: 2px solid #eee;">
                 <div style="display: grid; grid-template-columns: 1fr; gap: 10px; font-size: 1.1rem;">
                     <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>1. राम ने रावण को मारा:</b> कर्ता (राम ने), कर्म (रावण को)</div>
