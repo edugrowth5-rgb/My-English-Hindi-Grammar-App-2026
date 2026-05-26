@@ -6,7 +6,7 @@
 if (typeof Hindi === 'undefined') { window.Hindi = {}; }
 
 Hindi.karak = {
-    title: "कारक: वाक्य संरचना का आधार 🔗",
+    title: "कारक(Case): वाक्य संरचना का आधार 🔗",
     content: `
         <section style="text-align: left; padding: 10px; font-family: 'Segoe UI', sans-serif;">
             
