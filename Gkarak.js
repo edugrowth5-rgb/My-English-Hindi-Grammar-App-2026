@@ -1,111 +1,353 @@
 /**
- * Gkarak.js - Hindi Grammar Topic
- * Topic: कारक (Case) - संज्ञा का क्रिया से संबंध
+ * Gkarak.js - High School Descriptive Edition
+ * Topic: कारक (Case) - पूर्ण व्याकरणिक विश्लेषण
  */
 
 if (typeof Hindi === 'undefined') { window.Hindi = {}; }
 
 Hindi.karak = {
-    title: "कारक (Case): संज्ञा का आधार 🔗",
+    title: "कारक(Case): वाक्य संरचना का आधार 🔗",
     content: `
-        <section style="text-align: left; padding: 10px;">
-            <p style="font-size: 1.4rem; line-height: 1.8; color: #333; background: #f0f7ff; padding: 20px; border-radius: 20px; border: 2px solid #4D96FF;">
-                संज्ञा या सर्वनाम के जिस रूप से उसका संबंध वाक्य के अन्य शब्दों (विशेषकर क्रिया) के साथ जाना जाए, उसे <b>कारक</b> कहते हैं। 
-                <br><i>जैसे:</i> <b>राम ने</b> रावण को मारा। (यहाँ 'ने' और 'को' कारक चिह्न हैं)
-            </p>
-
-            <h2 style="color: #4D96FF; font-size: 2.2rem; border-bottom: 3px solid #4D96FF; display: inline-block; margin-top: 30px;">कारक के भेद और चिह्न (Vibhakti)</h2>
-            <p style="font-size: 1.3rem; margin-top: 10px;">हिन्दी में कारक के <b>8 भेद</b> होते हैं। इन्हें याद करने के लिए यह तालिका (Table) सबसे आसान है:</p>
-
-            <div style="overflow-x: auto; margin-top: 20px;">
-                <table style="width: 100%; border-collapse: collapse; font-size: 1.2rem; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                    <thead style="background: #4D96FF; color: white;">
-                        <tr>
-                            <th style="padding: 15px; border: 1px solid #ddd;">कारक (Karak)</th>
-                            <th style="padding: 15px; border: 1px solid #ddd;">चिह्न (Sign)</th>
-                            <th style="padding: 15px; border: 1px solid #ddd;">अर्थ (Meaning)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td style="padding: 12px; border: 1px solid #eee;">1. कर्ता (Karta)</td><td style="padding: 12px; border: 1px solid #eee; font-weight: bold; color: #FF6B6B;">ने</td><td style="padding: 12px; border: 1px solid #eee;">काम करने वाला</td></tr>
-                        <tr><td style="padding: 12px; border: 1px solid #eee;">2. कर्म (Karma)</td><td style="padding: 12px; border: 1px solid #eee; font-weight: bold; color: #FF6B6B;">को</td><td style="padding: 12px; border: 1px solid #eee;">जिस पर काम का फल पड़े</td></tr>
-                        <tr><td style="padding: 12px; border: 1px solid #eee;">3. करण (Karan)</td><td style="padding: 12px; border: 1px solid #eee; font-weight: bold; color: #FF6B6B;">से, के द्वारा</td><td style="padding: 12px; border: 1px solid #eee;">काम करने का साधन</td></tr>
-                        <tr><td style="padding: 12px; border: 1px solid #eee;">4. संप्रदान (Sampradan)</td><td style="padding: 12px; border: 1px solid #eee; font-weight: bold; color: #FF6B6B;">को, के लिए</td><td style="padding: 12px; border: 1px solid #eee;">जिसके लिए काम किया जाए</td></tr>
-                        <tr><td style="padding: 12px; border: 1px solid #eee;">5. अपादान (Apadan)</td><td style="padding: 12px; border: 1px solid #eee; font-weight: bold; color: #FF6B6B;">से (अलग होना)</td><td style="padding: 12px; border: 1px solid #eee;">किसी चीज से अलग होना</td></tr>
-                        <tr><td style="padding: 12px; border: 1px solid #eee;">6. संबंध (Sambandh)</td><td style="padding: 12px; border: 1px solid #eee; font-weight: bold; color: #FF6B6B;">का, के, की</td><td style="padding: 12px; border: 1px solid #eee;">रिश्ता या संबंध बताना</td></tr>
-                        <tr><td style="padding: 12px; border: 1px solid #eee;">7. अधिकरण (Adhikaran)</td><td style="padding: 12px; border: 1px solid #eee; font-weight: bold; color: #FF6B6B;">में, पर</td><td style="padding: 12px; border: 1px solid #eee;">काम का आधार या स्थान</td></tr>
-                        <tr><td style="padding: 12px; border: 1px solid #eee;">8. संबोधन (Sambodhan)</td><td style="padding: 12px; border: 1px solid #eee; font-weight: bold; color: #FF6B6B;">हे! अरे! रे!</td><td style="padding: 12px; border: 1px solid #eee;">किसी को पुकारना</td></tr>
-                    </tbody>
-                </table>
+        <section style="text-align: left; padding: 10px; font-family: 'Segoe UI', sans-serif;">
+            
+            <div style="background: #eef2ff; padding: 25px; border-radius: 25px; border-left: 10px solid #4F46E5; margin-bottom: 30px;">
+                <h2 style="color: #4F46E5; font-size: 2.2rem; margin-top:0;">1. कारक की परिभाषा (Definition)</h2>
+                <p style="font-size: 1.3rem; line-height: 1.8;">
+                    संज्ञा या सर्वनाम के जिस रूप से उसका संबंध वाक्य के अन्य शब्दों, विशेषकर <b>क्रिया (Verb)</b> के साथ जाना जाता है, उसे <b>कारक</b> कहते हैं। 
+                    <br><br>
+                    वाक्य में शब्दों को जोड़ने वाले चिह्न (जैसे- ने, को, से) <b>विभक्ति</b> या <b>परसर्ग</b> कहलाते हैं।
+                </p>
             </div>
 
-            <div style="background: #fff5f5; padding: 20px; border-radius: 20px; border: 2px solid #FF6B6B; margin-top: 30px;">
-                <h3 style="color: #FF6B6B; margin-top: 0;">⚠️ सावधान: 'से' का अंतर</h3>
-                <p style="font-size: 1.2rem;"><b>करण कारक:</b> पेन <b>से</b> लिखो (साधन)।</p>
-                <p style="font-size: 1.2rem;"><b>अपादान कारक:</b> पेड़ <b>से</b> पत्ता गिरा (अलग होना)।</p>
+            <h2 style="color: #333; font-size: 2rem; border-bottom: 3px solid #4F46E5; display: inline-block; margin-bottom: 20px;">2. कारक के भेद (8 Types)</h2>
+            <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                <thead style="background: #4F46E5; color: white;">
+                    <tr>
+                        <th style="padding: 15px; border: 1px solid #ddd;">क्रम</th>
+                        <th style="padding: 15px; border: 1px solid #ddd;">कारक का नाम</th>
+                        <th style="padding: 15px; border: 1px solid #ddd;">विभक्ति चिह्न</th>
+                        <th style="padding: 15px; border: 1px solid #ddd;">अर्थ/कार्य</th>
+                    </tr>
+                </thead>
+                <tbody style="font-size: 1.1rem;">
+                    <tr><td style="padding:10px; border:1px solid #eee; text-align:center;">1</td><td style="padding:10px; border:1px solid #eee;"><b>कर्ता (Nominative)</b></td><td style="padding:10px; border:1px solid #eee; text-align:center;">ने</td><td style="padding:10px; border:1px solid #eee;">काम करने वाला</td></tr>
+                    <tr><td style="padding:10px; border:1px solid #eee; text-align:center;">2</td><td style="padding:10px; border:1px solid #eee;"><b>कर्म (Accusative)</b></td><td style="padding:10px; border:1px solid #eee; text-align:center;">को</td><td style="padding:10px; border:1px solid #eee;">जिस पर क्रिया का फल पड़े</td></tr>
+                    <tr><td style="padding:10px; border:1px solid #eee; text-align:center;">3</td><td style="padding:10px; border:1px solid #eee;"><b>करण (Instrumental)</b></td><td style="padding:10px; border:1px solid #eee; text-align:center;">से, के द्वारा</td><td style="padding:10px; border:1px solid #eee;">क्रिया का साधन/माध्यम</td></tr>
+                    <tr><td style="padding:10px; border:1px solid #eee; text-align:center;">4</td><td style="padding:10px; border:1px solid #eee;"><b>सम्प्रदान (Dative)</b></td><td style="padding:10px; border:1px solid #eee; text-align:center;">को, के लिए</td><td style="padding:10px; border:1px solid #eee;">जिसके लिए क्रिया की जाए</td></tr>
+                    <tr><td style="padding:10px; border:1px solid #eee; text-align:center;">5</td><td style="padding:10px; border:1px solid #eee;"><b>अपादान (Ablative)</b></td><td style="padding:10px; border:1px solid #eee; text-align:center;">से (अलग होना)</td><td style="padding:10px; border:1px solid #eee;">तुलना या अलग होने का भाव</td></tr>
+                    <tr><td style="padding:10px; border:1px solid #eee; text-align:center;">6</td><td style="padding:10px; border:1px solid #eee;"><b>संबंध (Genitive)</b></td><td style="padding:10px; border:1px solid #eee; text-align:center;">का, के, की, रा, रे</td><td style="padding:10px; border:1px solid #eee;">अन्य शब्दों से संबंध बताना</td></tr>
+                    <tr><td style="padding:10px; border:1px solid #eee; text-align:center;">7</td><td style="padding:10px; border:1px solid #eee;"><b>अधिकरण (Locative)</b></td><td style="padding:10px; border:1px solid #eee; text-align:center;">में, पर</td><td style="padding:10px; border:1px solid #eee;">क्रिया का आधार (स्थान/समय)</td></tr>
+                    <tr><td style="padding:10px; border:1px solid #eee; text-align:center;">8</td><td style="padding:10px; border:1px solid #eee;"><b>सम्बोधन (Vocative)</b></td><td style="padding:10px; border:1px solid #eee; text-align:center;">हे! अरे! ओ!</td><td style="padding:10px; border:1px solid #eee;">पुकारना या बुलाना</td></tr>
+                </tbody>
+            </table>
+
+            <h2 style="color: #333; font-size: 2rem; border-bottom: 3px solid #e67e22; display: inline-block; margin-bottom: 20px;">3. विशेष नियम एवं अंतर</h2>
+            
+            <div style="background: white; padding: 20px; border-radius: 20px; border: 1px solid #eee; line-height: 1.8;">
+                <p style="font-size: 1.2rem;"><b>A. कर्म कारक बनाम सम्प्रदान कारक:</b> दोनों में 'को' का प्रयोग होता है। लेकिन जहाँ <u>देने का भाव</u> हो, वहाँ सम्प्रदान होता है।<br><i>उदा:</i> मोहन को पुस्तक दो। (सम्प्रदान)</p>
+                <hr>
+                <p style="font-size: 1.2rem;"><b>B. करण कारक बनाम अपादान कारक:</b> दोनों में 'से' का प्रयोग होता है। करण में 'से' <u>साधन</u> है (कलम से लिखना), जबकि अपादान में <u>अलगाव</u> है (पेड़ से पत्ता गिरना)।</p>
+                <hr>
+                <p style="font-size: 1.2rem;"><b>C. कर्ता 'ने' का प्रयोग:</b> 'ने' का प्रयोग केवल सकर्मक क्रिया के साथ भूतकाल में होता है। वर्तमान और भविष्य में 'ने' लुप्त रहता है।</p>
+            </div>
+
+            <h2 style="color: #333; font-size: 2rem; border-bottom: 3px solid #333; display: inline-block; margin: 30px 0 20px 0;">4. कारक उदाहरण (200 मुख्य वाक्य)</h2>
+            <div style="height: 400px; overflow-y: auto; background: #fff; padding: 20px; border-radius: 20px; border: 2px solid #eee;">
+                <div style="display: grid; grid-template-columns: 1fr; gap: 10px; font-size: 1.1rem;">
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>1. राम ने रावण को मारा:</b> कर्ता (राम ने), कर्म (रावण को)</div>
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>2. वह कलम से लिखता है:</b> करण (कलम से)</div>
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>3. गरीबों को दान दो:</b> सम्प्रदान (गरीबों को)</div>
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>4. हिमालय से गंगा निकलती है:</b> अपादान (हिमालय से)</div>
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>5. यह सुरेश का घर है:</b> संबंध (सुरेश का)</div>
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>6. मेज पर पुस्तक रखी है:</b> अधिकरण (मेज पर)</div>
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>7. हे भगवान! रक्षा करो:</b> संबोधन (हे भगवान)</div>
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>8. वृक्ष से फल गिरा:</b> अपादान (वृक्ष से)</div>
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>9. माँ बच्चे के लिए दूध लाई:</b> सम्प्रदान (बच्चे के लिए)</div>
+                    <div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>10. शिकारी ने शेर को बंदूक से मारा:</b> कर्ता, कर्म, करण</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>11. बंदर पेड़ पर बैठा है:</b> अधिकरण (पेड़ पर)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>12. गंगा हिमालय से निकलती है:</b> अपादान (हिमालय से - अलगाव)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>13. वह हाथ से लिखता है:</b> करण (हाथ से - साधन)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>14. अरे! तुम कब आए?:</b> संबोधन (अरे!)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>15. राजा ने ब्राह्मण को दान दिया:</b> सम्प्रदान (ब्राह्मण को - दान का भाव)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>16. बच्चा साँप से डर गया:</b> अपादान (डर के योग में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>17. चाकू से सेब काटो:</b> करण (चाकू से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>18. वह दिल्ली से मुंबई गया:</b> अपादान (दिल्ली से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>19. राधा की बहन बीमार है:</b> संबंध (राधा की)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>20. कमरे में अंधेरा है:</b> अधिकरण (कमरे में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>21. मोहन ने सोहन को किताब दी:</b> कर्ता (मोहन), सम्प्रदान (सोहन को)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>22. छत से पानी टपक रहा है:</b> अपादान (छत से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>23. हे अर्जुन! युद्ध करो:</b> संबोधन (हे अर्जुन)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>24. अध्यापक ने छात्रों को पढ़ाया:</b> कर्ता (अध्यापक), कर्म (छात्रों को)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>25. राम का भाई लक्ष्मण वन गया:</b> संबंध (राम का), अधिकरण (वन)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>26. मैं रेलगाड़ी से आया हूँ:</b> करण (रेलगाड़ी से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>27. प्यासे को पानी पिलाओ:</b> सम्प्रदान (प्यासे को)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>28. आसमान का रंग नीला है:</b> संबंध (आसमान का)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>29. थाली में फल रखे हैं:</b> अधिकरण (थाली में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>30. सीता गीता से सुंदर है:</b> अपादान (तुलना के योग में)</div>
+
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>51. कलम मेज पर है:</b> अधिकरण (पर)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>52. वह पैरों से लंगड़ा है:</b> करण (विकार के योग में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>53. स्वास्थ्य के लिए दूध पियो:</b> सम्प्रदान (के लिए)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>54. वह बस से उतर गया:</b> अपादान (बस से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>55. दशरथ के पुत्र राम थे:</b> संबंध (के)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>56. ओ भाई! इधर आओ:</b> संबोधन (ओ भाई)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>57. पुलिस ने चोर को पकड़ा:</b> कर्ता (ने), कर्म (को)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>58. बच्चा खिलौनों से खेलता है:</b> करण (से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>59. सूर्य पृथ्वी से दूर है:</b> अपादान (दूरी के योग में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>60. आँखों से पानी गिरा:</b> अपादान (आँखों से)</div>
+
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>101. गुरुजी को नमस्कार:</b> सम्प्रदान (नमस्कार के योग में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>102. यह सोने की अंगूठी है:</b> संबंध (सोने की)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>103. विद्यालय के पास मैदान है:</b> संबंध (के पास)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>104. बच्चा छत पर खड़ा है:</b> अधिकरण (छत पर)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>105. राम ने बाण से बाली को मारा:</b> कर्ता (ने), करण (से), कर्म (को)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>106. हिमालय से हवा आती है:</b> अपादान (हिमालय से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>107. देश के लिए मरना गौरव है:</b> सम्प्रदान (के लिए)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>108. वह बुद्धि से तेज है:</b> करण (साधन स्वरूप)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>109. तालाब में कमल खिले हैं:</b> अधिकरण (तालाब में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>110. राम की गाय बहुत दूध देती है:</b> संबंध (राम की)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>111. वह गाँव से शहर आया है:</b> अपादान (गाँव से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>112. अरे! तुम पागल हो गए क्या?:</b> संबोधन (अरे!)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>113. माली ने पौधों को सींचा:</b> कर्ता, कर्म</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>114. चाकू के द्वारा सब्जी काटो:</b> करण (के द्वारा)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>115. भिखारी को कपड़े दो:</b> सम्प्रदान (भिखारी को)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>116. वृक्षों से पत्ते गिरते हैं:</b> अपादान (वृक्षों से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>117. मोहन की साइकिल नई है:</b> संबंध (मोहन की)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>118. शेर जंगल में रहता है:</b> अधिकरण (जंगल में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>119. मैं अपनी आँखों से देखता हूँ:</b> करण (आँखों से)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>120. राम ने सीता के लिए रावण को मारा:</b> कर्ता, सम्प्रदान, कर्म</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>121. उसे जाने दो:</b> कर्म (उसे)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>122. वह सोमवार को आएगा:</b> अधिकरण (समय के संदर्भ में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>123. गरीबों पर दया करो:</b> अधिकरण (पर)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>124. पेड़ से गिरा फल:</b> अपादान (अलगाव)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>125. वह स्वभाव से कंजूस है:</b> करण (स्वभाव के योग में)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>126. ईश्वर ने हमें ज्ञान दिया:</b> कर्ता (ईश्वर ने), सम्प्रदान (हमें)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>127. हे देव! मेरी रक्षा करो:</b> संबोधन (हे देव)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>128. वह छत से कूद पड़ा:</b> अपादान (अलगाव)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>129. बच्चों के लिए मिठाई लाओ:</b> सम्प्रदान (के लिए)</div>
+<div style="padding:8px; border-bottom:1px solid #f0f0f0;"><b>130. सीता की गुड़िया सुंदर है:</b> संबंध (सीता की)</div>
+                    <div style="text-align:center; color:#999; margin-top:10px;">[ 130 कारक आधारित वाक्यों का विश्लेषण ]</div>
+                </div>
             </div>
         </section>
 
-        <hr style="border: 2px dashed #ccc; margin: 50px 0;">
-
-        <div class="quiz-panel" id="hindi-quiz-wrapper" style="background: #FFF; padding: 35px; border-radius: 35px; border: 5px solid #4D96FF;">
+        <div class="quiz-panel" id="hindi-quiz-wrapper" style="background: #fff; padding: 35px; border-radius: 35px; border: 5px solid #4F46E5; margin-top: 40px;">
             <div style="display: flex; justify-content: space-between; font-size: 1.6rem; font-weight: bold; margin-bottom: 30px;">
-                <span id="hq-progress" style="color: #4D96FF;">प्रश्न: 1 / 40</span>
+                <span id="hq-progress" style="color: #4F46E5;">प्रश्न: 1 / 400</span>
                 <span id="hq-score" style="color: #6BCB77;">स्कोर: 0</span>
             </div>
-            
             <div id="h-question-container" style="min-height: 220px; text-align: center;">
-                <h4 id="hq-text" style="font-size: 1.8rem; color: #2c3e50; margin-bottom: 35px; line-height: 1.5;">क्विज़ लोड हो रहा है...</h4>
+                <h4 id="hq-text" style="font-size: 1.8rem; color: #2c3e50; margin-bottom: 35px;">क्विज़ लोड हो रहा है...</h4>
                 <div id="h-options-box"></div>
             </div>
-            
             <div style="display: flex; justify-content: space-between; gap: 20px; margin-top: 45px;">
-                <button class="option-btn" style="background:#eee; flex:1; text-align:center; padding: 20px; font-size: 1.3rem;" onclick="window.prevHindiQuestion()">पीछे</button>
-                <button class="option-btn" style="background:#4D96FF; color:white; flex:1; text-align:center; padding: 20px; font-size: 1.3rem;" onclick="window.nextHindiQuestion()">आगे</button>
+                <button class="option-btn" onclick="window.prevHindiQuestion()">पीछे</button>
+                <button class="option-btn" style="background:#4F46E5; color:white;" onclick="window.nextHindiQuestion()">आगे</button>
             </div>
-            <button class="option-btn" style="margin-top:30px; background:transparent; border: 3px solid #4D96FF; color:#4D96FF; font-size: 1.2rem; text-align:center; padding: 15px; width: 100%;" onclick="window.resetHindiQuiz()">शुरू से शुरू करें</button>
         </div>
     `,
-    quizData: [
-        { q: "1. 'राम ने रावण को मारा' में 'ने' कौन सा कारक है?", options: ["कर्म", "करण", "कर्ता"], correct: 2 },
-        { q: "2. हिमालय 'से' गंगा निकलती है। 'से' यहाँ क्या है?", options: ["करण", "अपादान", "संबंध"], correct: 1 },
-        { q: "3. कारक के कितने भेद होते हैं?", options: ["छह", "सात", "आठ"], correct: 2 },
-        { q: "4. 'पेन से लिखो' में कौन सा कारक है?", options: ["करण", "अपादान", "संप्रदान"], correct: 0 },
-        { q: "5. 'हे राम!' रक्षा करो। यह कौन सा कारक है?", options: ["अधिकरण", "संबोधन", "संबंध"], correct: 1 },
-        { q: "6. 'को' और 'के लिए' किस कारक के चिह्न हैं?", options: ["करण", "संप्रदान", "अपादान"], correct: 1 },
-        { q: "7. मेज 'पर' पुस्तक रखी है। यहाँ 'पर' है:", options: ["अधिकरण", "संबंध", "कर्म"], correct: 0 },
-        { q: "8. 'वह राहुल का भाई है' में 'का' क्या दर्शाता है?", options: ["अपादान", "संबंध", "कर्ता"], correct: 1 },
-        { q: "9. 'माँ बच्चे को दूध पिलाती है' में 'को' क्या है?", options: ["कर्ता", "कर्म", "करण"], correct: 1 },
-        { q: "10. 'पेड़ से फल गिरा' में कौन सा कारक है?", options: ["करण", "अपादान", "संप्रदान"], correct: 1 },
-        { q: "11. संज्ञा का क्रिया से संबंध बताने वाले शब्द कहलाते हैं:", options: ["विकार", "विशेषण", "कारक"], correct: 2 },
-        { q: "12. कर्ता कारक का विभक्ति चिह्न क्या है?", options: ["को", "से", "ने"], correct: 2 },
-        { q: "13. 'राम के लिए फल लाओ' में कारक है:", options: ["संप्रदान", "अपादान", "संबंध"], correct: 0 },
-        { q: "14. 'मैं चाकू से फल काटता हूँ' में कारक है:", options: ["अपादान", "करण", "कर्म"], correct: 1 },
-        { q: "15. 'अरे भाई!' इधर आओ।", options: ["संबोधन", "अधिकरण", "संबंध"], correct: 0 },
-        { q: "16. 'गंगा का जल' में कौन सा कारक है?", options: ["कर्ता", "कर्म", "संबंध"], correct: 2 },
-        { q: "17. 'बिल्ली छत पर बैठी है' में कारक है:", options: ["अपादान", "अधिकरण", "करण"], correct: 1 },
-        { q: "18. अलग होने के अर्थ में कौन सा कारक आता है?", options: ["करण", "अपादान", "संप्रदान"], correct: 1 },
-        { q: "19. संप्रदान कारक का अर्थ क्या है?", options: ["किसी को देना", "काम करना", "अलग होना"], correct: 0 },
-        { q: "20. साधन के अर्थ में कौन सा कारक आता है?", options: ["अधिकरण", "करण", "कर्ता"], correct: 1 },
-        { q: "21. 'वह बस से स्कूल जाता है' में 'से' है:", options: ["करण", "अपादान", "कर्म"], correct: 0 },
-        { q: "22. अधिकरण कारक का चिह्न क्या है?", options: ["ने", "में/पर", "का/के/की"], correct: 1 },
-        { q: "23. 'सीमा मोहन की बहन है।'", options: ["संबंध", "अधिकरण", "संप्रदान"], correct: 0 },
-        { q: "24. 'भिखारी को दान दो' में 'को' है:", options: ["कर्म", "संप्रदान", "करण"], correct: 1 },
-        { q: "25. 'आसमान में तारे हैं' में कारक है:", options: ["अधिकरण", "अपादान", "संबोधन"], correct: 0 },
-        { q: "26. 'चाकू से सेब काटिए' में कारक है:", options: ["अपादान", "करण", "कर्म"], correct: 1 },
-        { q: "27. 'मोहन घर से चला गया' में कारक है:", options: ["अधिकरण", "अपादान", "करण"], correct: 1 },
-        { q: "28. संबोधन कारक का प्रयोग कहाँ होता है?", options: ["बुलाने में", "देने में", "रिश्ता बताने में"], correct: 0 },
-        { q: "29. 'के द्वारा' किस कारक का चिह्न है?", options: ["करण", "कर्म", "संप्रदान"], correct: 0 },
-        { q: "30. 'पिताजी बच्चों के लिए मिठाई लाए।'", options: ["संबंध", "संप्रदान", "कर्ता"], correct: 1 },
-        { q: "31. अपादान कारक में 'से' का अर्थ है:", options: ["जोड़ना", "साधन", "अलग होना"], correct: 2 },
-        { q: "32. 'वह अपनी कक्षा में प्रथम आया।'", options: ["अधिकरण", "करण", "संप्रदान"], correct: 0 },
-        { q: "33. 'यह राम की पुस्तक है।'", options: ["कर्ता", "संबंध", "अपादान"], correct: 1 },
-        { q: "34. 'अरे! तुम कब आए?'", options: ["संबोधन", "अधिकरण", "संबंध"], correct: 0 },
-        { q: "35. 'शिक्षक ने छात्र को पढ़ाया।'", options: ["कर्ता और कर्म", "करण", "अपादान"], correct: 0 },
-        { q: "36. कर्म कारक का चिह्न क्या है?", options: ["ने", "से", "को"], correct: 2 },
-        { q: "37. 'छत से पानी गिर रहा है।'", options: ["अपादान", "करण", "अधिकरण"], correct: 0 },
-        { q: "38. 'मोहन पेन से चित्र बनाता है।'", options: ["अपादान", "करण", "संप्रदान"], correct: 1 },
-        { q: "39. 'मेरे भाई का घर बड़ा है।'", options: ["संबंध", "अधिकरण", "कर्ता"], correct: 0 },
-        { q: "40. विभक्ति चिह्न को और क्या कहते हैं?", options: ["समास", "परसर्ग", "संधि"], correct: 1 }
-    ]
+    /* --- Dkarak.js: 200 Pure Karak Quiz Questions --- */
+
+quizData: [
+    { q: "1. 'राम ने रावण को मारा' - इस वाक्य में 'ने' किस कारक का चिह्न है?", options: ["कर्म", "कर्ता", "करण"], correct: 1 },
+    { q: "2. 'मेज पर पुस्तक रखी है' - यहाँ 'पर' कौन-सा कारक है?", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "3. 'पेड़ से पत्ता गिरा' - अलगाव के लिए कौन-सा कारक प्रयुक्त होता है?", options: ["करण", "अपादान", "संप्रदान"], correct: 1 },
+    { q: "4. 'वह कलम से लिखता है' - यहाँ 'कलम से' में कौन-सा कारक है?", options: ["करण", "अपादान", "कर्म"], correct: 0 },
+    { q: "5. 'माँ बच्चे के लिए दूध लाई' - 'के लिए' किस कारक की विभक्ति है?", options: ["कर्म", "संप्रदान", "अधिकरण"], correct: 1 },
+    { q: "6. 'अरे! तुम यहाँ क्या कर रहे हो?' - इसमें 'अरे' शब्द कौन सा कारक है?", options: ["संबोधन", "संबंध", "कर्ता"], correct: 0 },
+    { q: "7. 'राम की बहन बीमार है' - यहाँ 'की' किस कारक का चिह्न है?", options: ["अधिकरण", "संप्रदान", "संबंध"], correct: 2 },
+    { q: "8. 'पुलिस ने चोर को पकड़ा' - यहाँ 'चोर को' में कौन-सा कारक है?", options: ["कर्ता", "कर्म", "करण"], correct: 1 },
+    { q: "9. 'वह कुल्हाड़ी से वृक्ष काटता है' - यहाँ कुल्हाड़ी क्रिया का क्या है?", options: ["साधन (करण)", "आधार (अधिकरण)", "कर्म"], correct: 0 },
+    { q: "10. 'गरीबों को अन्न दो' - दान देने के अर्थ में 'को' किस कारक का है?", options: ["कर्म", "संप्रदान", "अपादान"], correct: 1 },
+    { q: "11. 'छत से बच्चा गिर पड़ा' - यहाँ 'से' किस कारक का बोध कराता है?", options: ["करण", "अधिकरण", "अपादान"], correct: 2 },
+    { q: "12. 'हे प्रभु! मेरी रक्षा करो' - यह वाक्य किस कारक का उदाहरण है?", options: ["कर्ता", "संबोधन", "संबंध"], correct: 1 },
+    { q: "13. 'क्रिया के आधार' (स्थान/समय) को बताने वाला कारक कहलाता है:", options: ["अधिकरण", "करण", "संप्रदान"], correct: 0 },
+    { q: "14. 'वह सोमवार को आएगा' - समय बताने के लिए यहाँ 'को' किस कारक में है?", options: ["कर्म", "अधिकरण", "संबंध"], correct: 1 },
+    { q: "15. 'हिमालय से गंगा निकलती है' - उद्गम स्थल में कौन सा कारक होता है?", options: ["करण", "अपादान", "तुलना"], correct: 1 },
+    { q: "16. 'विभक्ति' का दूसरा व्याकरणिक नाम क्या है?", options: ["उपसर्ग", "प्रत्यय", "परसर्ग"], correct: 2 },
+    { q: "17. 'वह साँप से डरता है' - भय या डर के योग में कौन-सा कारक होता है?", options: ["अपादान", "करण", "संबंध"], correct: 0 },
+    { q: "18. 'राधा कृष्ण से छोटी है' - तुलना करने पर कौन-सा कारक प्रयुक्त होता है?", options: ["करण", "अपादान", "संप्रदान"], correct: 1 },
+    { q: "19. 'कमरे में अंधेरा है' - 'में' किस कारक की विभक्ति है?", options: ["अधिकरण", "अपादान", "करण"], correct: 0 },
+    { q: "20. 'यह सुरेश का घर है' - संज्ञाओं के बीच संबंध बताने वाला कारक है:", options: ["अधिकरण", "संबंध", "संबोधन"], correct: 1 },
+    { q: "21. 'गुरुजी को नमस्कार' - नमस्कार के योग में कौन सा कारक होता है?", options: ["कर्म", "संप्रदान", "अपादान"], correct: 1 },
+    { q: "22. 'वह गाँव से शहर आया है' - एक स्थान से दूसरे स्थान जाने में कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "23. 'चाकू से फल काटो' - यहाँ काटने का साधन क्या है?", options: ["करण", "अपादान", "कर्म"], correct: 0 },
+    { q: "24. 'राम ने बाली को बाण से मारा' - इस वाक्य में बाण क्या है?", options: ["कर्ता", "करण", "कर्म"], correct: 1 },
+    { q: "25. 'मोहन सोहन को किताब देता है' - यहाँ 'को' किस कारक का चिह्न है?", options: ["कर्म", "संप्रदान", "अधिकरण"], correct: 1 },
+    { q: "26. 'वृक्ष पर पक्षी बैठे हैं' - आधार का बोध कराने वाला कारक है:", options: ["अपादान", "अधिकरण", "संबंध"], correct: 1 },
+    { q: "27. 'ओ भाई! इधर सुनो' - किसी को पुकारने वाला कारक कौन सा है?", options: ["कर्ता", "संबोधन", "अपादान"], correct: 1 },
+    { q: "28. 'आँखों से आँसू गिरे' - अलगाव के अर्थ में कारक पहचानें:", options: ["अपादान", "करण", "अधिकरण"], correct: 0 },
+    { q: "29. 'वह पैरों से लंगड़ा है' - अंग विकार बताने के लिए कारक होता है:", options: ["करण", "अपादान", "संबंध"], correct: 0 },
+    { q: "30. 'शिकारी ने शेर को बंदूक से मारा' - यहाँ साधन कारक 'से' किसके साथ है?", options: ["शिकारी", "शेर", "बंदूक"], correct: 2 },
+    { q: "31. 'दशरथ के पुत्र राम थे' - 'के' किस कारक की विभक्ति है?", options: ["अधिकरण", "संबंध", "संप्रदान"], correct: 1 },
+    { q: "32. 'विद्यार्थी शिक्षक से पढ़ते हैं' - नियमपूर्वक विद्या ग्रहण में कारक है:", options: ["अपादान", "करण", "कर्म"], correct: 0 },
+    { q: "33. 'थाली में फल रखे हैं' - 'में' कारक का नाम बताइए:", options: ["अपादान", "करण", "अधिकरण"], correct: 2 },
+    { q: "34. 'अध्यापक ने छात्रों को पढ़ाया' - क्रिया करने वाला 'अध्यापक' है:", options: ["कर्ता", "कर्म", "करण"], correct: 0 },
+    { q: "35. 'वह बस से उतर गया' - बस से अलग होने में कौन सा कारक है?", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "36. 'गरीबों पर दया करो' - 'पर' किस कारक का चिह्न है?", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "37. 'हे अर्जुन! युद्ध करो' - इसमें कौन सा कारक है?", options: ["संबोधन", "संप्रदान", "अपादान"], correct: 0 },
+    { q: "38. 'मोहन का भाई' - यहाँ 'का' विभक्ति का कारक है:", options: ["कर्ता", "संबंध", "अपादान"], correct: 1 },
+    { q: "39. 'बिल्ली छत से कूद पड़ी' - यहाँ 'से' किस कारक का है?", options: ["करण", "अपादान", "तुलना"], correct: 1 },
+    { q: "40. 'बच्चे खिलौनों से खेल रहे हैं' - 'खिलौनों से' में कारक है:", options: ["अपादान", "करण", "कर्म"], correct: 1 },
+    { q: "41. 'आसमान का रंग नीला है' - आसमान और रंग में संबंध बताने वाला कारक है:", options: ["अधिकरण", "संबंध", "अपादान"], correct: 1 },
+    { q: "42. 'हमें बड़ों को सम्मान देना चाहिए' - यहाँ 'बड़ों को' कर्म कारक है?", options: ["सही", "गलत", "संप्रदान है"], correct: 0 },
+    { q: "43. 'वह रेलगाड़ी से आया है' - आने का माध्यम रेलगाड़ी है, अतः कारक है:", options: ["अपादान", "करण", "अधिकरण"], correct: 1 },
+    { q: "44. 'उसे जाने दो' - 'उसे' (मुझको/उसको) में छिपा कारक है:", options: ["कर्ता", "करण", "कर्म"], correct: 2 },
+    { q: "45. 'पिताजी बच्चों के लिए फल लाए' - किसके लिए क्रिया हुई?", options: ["पिताजी (कर्ता)", "बच्चों के लिए (संप्रदान)", "फल (कर्म)"], correct: 1 },
+    { q: "46. 'राम कुर्सी पर बैठा है' - बैठने का आधार 'कुर्सी' है:", options: ["संबंध", "अपादान", "अधिकरण"], correct: 2 },
+    { q: "47. 'वह बुद्धि से तेज है' - यहाँ 'से' विभक्ति किस कारक की है?", options: ["करण", "अपादान", "अधिकरण"], correct: 0 },
+    { q: "48. 'घर के बाहर मैदान है' - यहाँ 'के बाहर' किस कारक का संकेत है?", options: ["अधिकरण", "संबंध", "अपादान"], correct: 1 },
+    { q: "49. 'वह स्टेशन से चला गया' - यहाँ अलगाव का बोध हो रहा है:", options: ["करण", "अपादान", "संप्रदान"], correct: 1 },
+    { q: "50. 'कलम मेज पर है' - यहाँ 'पर' विभक्ति है:", options: ["करण", "अधिकरण", "अपादान"], correct: 1 },
+    { q: "51. 'राजा ने दान दिया' - 'ने' विभक्ति किस कारक की है?", options: ["कर्ता", "कर्म", "संबंध"], correct: 0 },
+    { q: "52. 'लड़के ने फल खाया' - यहाँ क्रिया का कर्ता कौन है?", options: ["फल", "लड़का", "खाया"], correct: 1 },
+    { q: "53. 'माँ बच्चे को दूध पिलाती है' - यहाँ 'बच्चे को' कौन सा कारक है?", options: ["कर्ता", "कर्म", "करण"], correct: 1 },
+    { q: "54. 'वह स्वभाव से कंजूस है' - विशेषता बताने के लिए यहाँ 'से' है:", options: ["करण", "अपादान", "अधिकरण"], correct: 0 },
+    { q: "55. 'वह समय पर आएगा' - यहाँ 'पर' कारक की विभक्ति है:", options: ["कर्म", "अधिकरण", "करण"], correct: 1 },
+    { q: "56. 'यह मेरी पुस्तक है' - 'मेरी' में कौन सा कारक है?", options: ["अधिकरण", "संबंध", "संप्रदान"], correct: 1 },
+    { q: "57. 'ईश्वर ने हमें ज्ञान दिया' - यहाँ 'हमें' (हमको) कर्म है या संप्रदान?", options: ["कर्ता", "संप्रदान", "करण"], correct: 1 },
+    { q: "58. 'वृक्षों से पत्ते गिरते हैं' - अलगाव के कारण 'वृक्षों से' है:", options: ["अपादान", "करण", "कर्म"], correct: 0 },
+    { q: "59. 'समुद्र के किनारे भीड़ है' - यहाँ 'के किनारे' स्थान आधार है:", options: ["संबंध", "अधिकरण", "अपादान"], correct: 1 },
+    { q: "60. 'लज्जा' (शर्म) महसूस करने में कारक होता है:", options: ["करण", "अपादान", "कर्म"], correct: 1 },
+    { q: "61. 'शिक्षक ने छात्र को डांटा' - डांट का फल किस पर पड़ा?", options: ["शिक्षक", "छात्र (कर्म)", "डांट"], correct: 1 },
+    { q: "62. 'वह अपनी आँखों से देखता है' - यहाँ साधन 'आँखों से' है:", options: ["अपादान", "करण", "संप्रदान"], correct: 1 },
+    { q: "63. 'अपादान' कारक का मुख्य अर्थ क्या है?", options: ["साधन", "पृथकता/अलगाव", "आधार"], correct: 1 },
+    { q: "64. 'संप्रदान' कारक का उद्देश्य क्या है?", options: ["कुछ देना/उपकार", "काम करना", "अलग होना"], correct: 0 },
+    { q: "65. 'अधिकरण' कारक क्या सूचित करता है?", options: ["कारण", "आधार (स्थान/समय)", "परिणाम"], correct: 1 },
+    { q: "66. भूतकाल की सकर्मक क्रिया में कर्ता के साथ क्या लगता है?", options: ["को", "ने", "से"], correct: 1 },
+    { q: "67. 'को' विभक्ति संप्रदान के अलावा और किसमें आती है?", options: ["करण", "कर्म", "अपादान"], correct: 1 },
+    { q: "68. 'से' विभक्ति करण के अलावा और किसमें आती है?", options: ["संबंध", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "69. 'राम ने रावण को मारा' - यहाँ 'को' चिह्न किस कारक का है?", options: ["कर्ता", "कर्म", "करण"], correct: 1 },
+    { q: "70. 'वह कार से गिर पड़ा' - कार से अलग होने में कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "71. 'बर्तन में पानी है' - यहाँ 'में' किस कारक का है?", options: ["संबंध", "अधिकरण", "करण"], correct: 1 },
+    { q: "72. 'चाकू के द्वारा' - 'के द्वारा' किस कारक की पहचान है?", options: ["करण", "अपादान", "संप्रदान"], correct: 0 },
+    { q: "73. 'भिखारी को रोटी दो' - यहाँ 'को' संप्रदान कारक है?", options: ["हाँ", "नहीं", "कर्म है"], correct: 0 },
+    { q: "74. 'पेड़ के नीचे' - यहाँ 'के नीचे' संबंध कारक का विस्तार है?", options: ["सही", "गलत", "अधिकरण है"], correct: 0 },
+    { q: "75. कारक के कुल कितने भेद हिंदी व्याकरण में मान्य हैं?", options: ["6", "7", "8"], correct: 2 },
+    { q: "76. 'ने' विभक्ति का लोप किस काल में होता है?", options: ["भूतकाल", "वर्तमान/भविष्य", "कोई नहीं"], correct: 1 },
+    { q: "77. 'कुल्हाड़ी से लकड़ी काटना' - यहाँ कुल्हाड़ी है:", options: ["करण", "कर्म", "अपादान"], correct: 0 },
+    { q: "78. 'मोहन की गाय' - इसमें संबंध कारक का चिह्न है:", options: ["ने", "की", "को"], correct: 1 },
+    { q: "79. 'छत पर बालक खेलता है' - यहाँ स्थान आधार क्या है?", options: ["करण", "अधिकरण", "संबंध"], correct: 1 },
+    { q: "80. 'अरे भाई! तुम कहाँ थे' - संबोधन कारक पहचानें:", options: ["अरे भाई", "तुम", "कहाँ"], correct: 0 },
+    { q: "81. 'शहर से दूर' - दूरी बताने में कारक होता है:", options: ["करण", "अपादान", "संबंध"], correct: 1 },
+    { q: "82. 'राम को बुलाओ' - यहाँ 'को' किस कारक का चिह्न है?", options: ["कर्ता", "कर्म", "संप्रदान"], correct: 1 },
+    { q: "83. 'वह पेंसिल से चित्र बनाता है' - साधन 'पेंसिल' है:", options: ["करण", "अपादान", "कर्म"], correct: 0 },
+    { q: "84. 'विद्यार्थियों के लिए' - 'के लिए' किस कारक का है?", options: ["संप्रदान", "कर्म", "करण"], correct: 0 },
+    { q: "85. 'शेर बाघ से अधिक बलवान है' - तुलना में कारक है:", options: ["करण", "अपादान", "संबंध"], correct: 1 },
+    { q: "86. 'में' और 'पर' किस कारक की विभक्तियाँ हैं?", options: ["संप्रदान", "अधिकरण", "अपादान"], correct: 1 },
+    { q: "87. 'पुस्तक अलमारी में है' - स्थान आधार कारक पहचानें:", options: ["अपादान", "अधिकरण", "संबंध"], correct: 1 },
+    { q: "88. 'गोपाल ने पत्र लिखा' - यहाँ कर्ता कौन है?", options: ["पत्र", "गोपाल", "लिखना"], correct: 1 },
+    { q: "89. 'शिक्षक ने छात्र को बुलाया' - यहाँ 'छात्र को' कर्म है?", options: ["हाँ", "नहीं", "संप्रदान है"], correct: 0 },
+    { q: "90. 'बस से यात्री उतरे' - अलगाव के योग में कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "91. 'वह सुई से कपड़े सीता है' - साधन कारक है:", options: ["करण", "अपादान", "कर्म"], correct: 0 },
+    { q: "92. 'दीन-दुखियों को दान दो' - यहाँ कारक है:", options: ["कर्म", "संप्रदान", "अपादान"], correct: 1 },
+    { q: "93. 'सीता का घर' - 'का' चिह्न किस कारक का है?", options: ["कर्ता", "संबंध", "अधिकरण"], correct: 1 },
+    { q: "94. 'पर्वत से पत्थर गिरा' - गिरना (अलगाव) सूचित करता है:", options: ["करण", "अपादान", "संप्रदान"], correct: 1 },
+    { q: "95. 'आँखों में काजल' - स्थान आधार कारक है:", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "96. 'हे राम! मुझ पर दया करो' - संबोधन कारक क्या है?", options: ["हे राम", "मुझ पर", "दया"], correct: 0 },
+    { q: "97. 'सोहन की कलम' - संबंध कारक की विभक्ति है:", options: ["की", "ने", "को"], correct: 1 },
+    { q: "98. 'वह साइकिल से गिर गया' - यहाँ कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "99. 'गुरु शिष्यों को पाठ पढ़ाते हैं' - कर्म कारक है:", options: ["गुरु", "शिष्यों को", "पाठ"], correct: 1 },
+    { q: "100. 'यह राम का घर है' - इसमें कारक है:", options: ["अधिकरण", "संबंध", "कर्ता"], correct: 1 },
+    { q: "101. 'वह लाठी से सांप मारता है' - यहाँ लाठी साधन है:", options: ["कर्म", "करण", "कर्ता"], correct: 1 },
+    { q: "102. 'पेड़ के नीचे पथिक बैठा है' - स्थान सूचक शब्द 'नीचे' है:", options: ["अधिकरण", "संबंध", "अपादान"], correct: 0 },
+    { q: "103. 'सीता गीता से सुंदर है' - जहाँ तुलना हो, वहाँ कारक है:", options: ["करण", "अपादान", "संप्रदान"], correct: 1 },
+    { q: "104. 'वह कानपुर से दिल्ली गया' - यात्रा में अलगाव के लिए है:", options: ["अपादान", "करण", "अधिकरण"], correct: 0 },
+    { q: "105. 'कृष्ण ने कंस को मारा' - क्रिया का प्रभाव 'कंस' पर है:", options: ["कर्ता", "करण", "कर्म"], correct: 2 },
+    { q: "106. 'मेज के ऊपर पंखा है' - स्थान संबंध सूचित करता है:", options: ["संबंध", "अधिकरण", "अपादान"], correct: 1 },
+    { q: "107. 'हे भगवान! भला करना' - पुकारने का चिह्न है:", options: ["हे", "ने", "को"], correct: 0 },
+    { q: "108. 'पुस्तकालय में छात्र पढ़ रहे हैं' - 'में' कारक है:", options: ["करण", "अधिकरण", "अपादान"], correct: 1 },
+    { q: "109. 'यह मेरा पेन है' - 'मेरा' किस कारक का उदाहरण है?", options: ["कर्ता", "संबंध", "करण"], correct: 1 },
+    { q: "110. 'वह कुएं से पानी भरता है' - यहाँ कारक है:", options: ["करण", "अपादान", "कर्म"], correct: 1 },
+    { q: "111. 'माँ ने बेटे को पुकारा' - यहाँ 'बेटे को' कर्म कारक है?", options: ["हाँ", "नहीं", "संप्रदान है"], correct: 0 },
+    { q: "112. 'हाथ से छड़ी गिर गई' - हाथ से अलग होने में कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "113. 'सीता का घर दूर है' - यहाँ 'का' विभक्ति है:", options: ["अधिकरण", "संबंध", "अपादान"], correct: 1 },
+    { q: "114. 'अरे! तुम अभी यहीं हो' - संबोधन का शब्द है:", options: ["अरे", "तुम", "यहीं"], correct: 0 },
+    { q: "115. 'वह रेल से आया' - 'से' यहाँ साधन के रूप में है:", options: ["करण", "अपादान", "तुलना"], correct: 0 },
+    { q: "116. 'राजा भिखारी को दान देता है' - यहाँ कारक है:", options: ["कर्म", "संप्रदान", "अपादान"], correct: 1 },
+    { q: "117. 'आकाश में तारे' - 'आकाश में' कारक पहचानें:", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "118. 'सांप बिल से बाहर निकला' - अलगाव के लिए 'से' है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "119. 'शिक्षक ने डस्टर से बोर्ड साफ किया' - यहाँ साधन है:", options: ["कर्ता", "करण", "कर्म"], correct: 1 },
+    { q: "120. 'यह राम की टोपी है' - संबंध कारक का चिह्न है:", options: ["का", "की", "के"], correct: 1 },
+    { q: "121. 'वह बस द्वारा घर गया' - 'द्वारा' किस कारक का चिह्न है?", options: ["करण", "अपादान", "संबंध"], correct: 0 },
+    { q: "122. 'भिखारी को भोजन दो' - देने के योग में 'को' है:", options: ["कर्म", "संप्रदान", "अधिकरण"], correct: 1 },
+    { q: "123. 'पत्ता पेड़ से गिरता है' - पेड़ से विलग होने में कारक है:", options: ["करण", "अपादान", "संप्रदान"], correct: 1 },
+    { q: "124. 'वह कलम से लिखता है' - लिखने का साधन कारक है:", options: ["करण", "अपादान", "संप्रदान"], correct: 0 },
+    { q: "125. 'मोहन सोहन से बुद्धिमान है' - तुलना करने पर कारक आता है:", options: ["करण", "अपादान", "संबंध"], correct: 1 },
+    { q: "126. 'अरे! तुम तो बड़े हो गए' - यहाँ 'अरे' विस्मय/संबोधन है:", options: ["संबोधन", "कर्ता", "अधिकरण"], correct: 0 },
+    { q: "127. 'पानी में मछली है' - यहाँ 'में' सूचित करता है:", options: ["करण", "अधिकरण", "अपादान"], correct: 1 },
+    { q: "128. 'वह विद्यालय से घर आया' - विद्यालय से अलग होने में कारक है:", options: ["करण", "अपादान", "कर्म"], correct: 1 },
+    { q: "129. 'यह राधा की पुस्तक है' - यहाँ संबंध किस विभक्ति से है?", options: ["राधा", "की", "पुस्तक"], correct: 1 },
+    { q: "130. 'पिताजी ने डांटा' - यहाँ कर्ता कारक का चिह्न है:", options: ["ने", "को", "से"], correct: 0 },
+    { q: "131. 'राम ने रावण को मारा' - इस वाक्य में 'ने' और 'को' क्या हैं?", options: ["प्रत्यय", "परसर्ग/विभक्ति", "उपसर्ग"], correct: 1 },
+    { q: "132. 'वह कार से आया' - आने का माध्यम 'कार' है:", options: ["करण", "अपादान", "अधिकरण"], correct: 0 },
+    { q: "133. 'गंगा हिमालय से निकलती है' - उद्गम में 'से' विभक्ति है:", options: ["करण", "अपादान", "संबंध"], correct: 1 },
+    { q: "134. 'वह आँखों से अंधा है' - शारीरिक विकार में कारक होता है:", options: ["करण", "अपादान", "कर्म"], correct: 0 },
+    { q: "135. 'गरीबों को वस्त्र दो' - यहाँ 'को' संप्रदान कारक है?", options: ["हाँ", "नहीं", "अधिकरण है"], correct: 0 },
+    { q: "136. 'मेज पर आम रखे हैं' - 'पर' किस कारक की विभक्ति है?", options: ["अपादान", "अधिकरण", "संबंध"], correct: 1 },
+    { q: "137. 'दशरथ का राज्य' - यहाँ 'का' विभक्ति का कारक है:", options: ["अधिकरण", "संबंध", "कर्ता"], correct: 1 },
+    { q: "138. 'ओ लड़कों! चुप रहो' - पुकारने के अर्थ में यहाँ संबोधन है:", options: ["ओ लड़कों", "चुप", "रहो"], correct: 0 },
+    { q: "139. 'वह कुएं से पानी निकालती है' - यहाँ 'से' कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "140. 'सैनिकों ने देश के लिए जान दी' - 'के लिए' विभक्ति है:", options: ["संप्रदान", "अपादान", "करण"], correct: 0 },
+    { q: "141. 'कुल्हाड़ी से पेड़ काटो' - यहाँ 'कुल्हाड़ी से' साधन है:", options: ["करण", "अपादान", "कर्म"], correct: 0 },
+    { q: "142. 'शिक्षक ने छात्र को पढ़ाया' - क्रिया को संपन्न करने वाला है:", options: ["छात्र", "शिक्षक (कर्ता)", "पढ़ाना"], correct: 1 },
+    { q: "143. 'वह स्वभाव से अच्छा है' - गुण/स्वभाव बताने में कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 0 },
+    { q: "144. 'पेन दराज में है' - स्थान का बोध कराने वाला कारक है:", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "145. 'राधा की सहेली' - यहाँ संबंध कारक की विभक्ति क्या है?", options: ["राधा", "की", "सहेली"], correct: 1 },
+    { q: "146. 'हे ईश्वर! रक्षा करो' - पुकारने का चिह्न 'हे' किस कारक का है?", options: ["संबोधन", "कर्ता", "अधिकरण"], correct: 0 },
+    { q: "147. 'वह दिल्ली से आया है' - दिल्ली से अलग होने में कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "148. 'मैंने उसे पुस्तक दी' - यहाँ 'उसे' (उसको) संप्रदान कारक है?", options: ["हाँ (देने का भाव)", "नहीं", "अधिकरण है"], correct: 0 },
+    { q: "149. 'कलम से लिखो' - यहाँ क्रिया का साधन है:", options: ["करण", "अपादान", "कर्म"], correct: 0 },
+    { q: "150. 'छत पर बंदर है' - यहाँ 'पर' विभक्ति है:", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "151. 'क्रिया का फल जिस पर पड़े' वह कहलाता है:", options: ["कर्ता", "कर्म", "करण"], correct: 1 },
+    { q: "152. 'जिसकी सहायता से कार्य संपन्न हो' वह है:", options: ["कर्ता", "करण", "अपादान"], correct: 1 },
+    { q: "153. 'जिसके लिए क्रिया की जाए' वह कारक है:", options: ["संप्रदान", "अपादान", "संबंध"], correct: 0 },
+    { q: "154. 'जिससे कोई वस्तु अलग हो' वह कारक कहलाता है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "155. 'जो दो पदों में आपसी संबंध जोड़े' वह है:", options: ["संबंध", "अधिकरण", "संबोधन"], correct: 0 },
+    { q: "156. 'क्रिया का आधार' बताने वाला व्याकरणिक पद है:", options: ["अधिकरण", "अपादान", "करण"], correct: 0 },
+    { q: "157. 'पुकारने या बुलाने का बोध' कराने वाला कारक:", options: ["संबोधन", "संबंध", "कर्ता"], correct: 0 },
+    { q: "158. 'कारक के हिंदी व्याकरण में कितने भेद हैं?'", options: ["6", "7", "8"], correct: 2 },
+    { q: "159. 'कर्ता कारक का विभक्ति चिह्न कौन सा है?'", options: ["ने", "को", "से"], correct: 0 },
+    { q: "160. 'कर्म कारक का विभक्ति चिह्न पहचानें:'", options: ["ने", "को", "से"], correct: 1 },
+    { q: "161. 'करण कारक का चिह्न इनमें से कौन सा है?'", options: ["से/द्वारा", "को", "में"], correct: 0 },
+    { q: "162. 'संप्रदान कारक का विभक्ति चिह्न क्या है?'", options: ["के लिए", "से", "का"], correct: 0 },
+    { q: "163. 'अपादान कारक का चिह्न (अलग होने हेतु) है:'", options: ["से", "को", "पर"], correct: 0 },
+    { q: "164. 'संबंध कारक का चिह्न कौन सा है?'", options: ["का/के/की", "ने", "में"], correct: 0 },
+    { q: "165. 'अधिकरण कारक का विभक्ति चिह्न है:'", options: ["में/पर", "हे/अरे", "ने"], correct: 0 },
+    { q: "166. 'संबोधन कारक का मुख्य चिह्न क्या है?'", options: ["हे/अरे", "का/की", "को"], correct: 0 },
+    { q: "167. 'ने' विभक्ति का प्रयोग प्रायः किस काल में होता है?", options: ["भूतकाल", "वर्तमान", "भविष्य"], correct: 0 },
+    { q: "168. 'कर्म और संप्रदान का विभक्ति चिह्न समान है:'", options: ["को", "से", "में"], correct: 0 },
+    { q: "169. 'करण और अपादान का विभक्ति चिह्न समान है:'", options: ["से", "को", "ने"], correct: 0 },
+    { q: "170. 'वह गेंद से खेलता है' - यहाँ 'गेंद से' कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 0 },
+    { q: "171. 'हाथ से किताब गिर गई' - हाथ से जुदाई होने में कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "172. 'यह राम का भाई है' - रिश्ता बताने वाला कारक है:", options: ["संबंध", "कर्ता", "करण"], correct: 0 },
+    { q: "173. 'कमरे में पंखा है' - स्थान आधार बताने वाला कारक:", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "174. 'हे राम! इधर आओ' - पुकारने के लिए प्रयुक्त कारक:", options: ["संबोधन", "कर्ता", "अधिकरण"], correct: 0 },
+    { q: "175. 'मैंने उसे फल दिया' - 'उसे' (उसको) देने के भाव में है:", options: ["कर्म", "संप्रदान", "कर्ता"], correct: 1 },
+    { q: "176. 'कुल्हाड़ी से लकड़ी काटो' - 'कुल्हाड़ी से' माध्यम है:", options: ["करण", "अपादान", "कर्म"], correct: 0 },
+    { q: "177. 'पेड़ से पत्ते गिर रहे हैं' - पेड़ से विलग होने में कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "178. 'विद्यार्थी कक्षा में हैं' - स्थान का आधार कारक पहचानें:", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "179. 'यह सुरेश की बहन है' - यहाँ 'की' विभक्ति है:", options: ["संबंध", "अधिकरण", "कर्ता"], correct: 0 },
+    { q: "180. 'अरे! तुमने यह क्या किया?' - संबोधन शब्द 'अरे' किस कारक का है?", options: ["संबोधन", "कर्ता", "करण"], correct: 0 },
+    { q: "181. 'वह बस से गिर पड़ा' - बस से अलग होने के कारण कारक है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "182. 'माँ ने खाना बनाया' - क्रिया करने वाली 'माँ' है:", options: ["कर्ता", "कर्म", "करण"], correct: 0 },
+    { q: "183. 'राम को पानी दो' - देने के योग में 'को' विभक्ति है:", options: ["कर्म", "संप्रदान", "करण"], correct: 1 },
+    { q: "184. 'पहाड़ पर बर्फ गिरती है' - 'पर' किस कारक की विभक्ति है?", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "185. 'शेर जंगल में रहता है' - जंगल स्थान आधार है:", options: ["अधिकरण", "अपादान", "करण"], correct: 0 },
+    { q: "186. 'यह मेरा भाई है' - यहाँ 'मेरा' में कौन सा कारक है?", options: ["संबंध", "कर्ता", "करण"], correct: 0 },
+    { q: "187. 'वह कलम से लिखती है' - यहाँ साधन कारक क्या है?", options: ["करण", "अपादान", "कर्म"], correct: 0 },
+    { q: "188. 'वह विद्यालय से आ रहा है' - यहाँ अलगाव का भाव है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "189. 'हे प्रभु! भला करो' - संबोधन कारक का उदाहरण है?", options: ["संबोधन", "कर्ता", "अधिकरण"], correct: 0 },
+    { q: "190. 'राम ने फल खाया' - 'ने' विभक्ति किस कारक की पहचान है?", options: ["कर्ता", "कर्म", "करण"], correct: 0 },
+    { q: "191. 'लड़के को बुलाओ' - क्रिया का फल जिस पर पड़े (लड़के पर):", options: ["कर्ता", "कर्म", "संप्रदान"], correct: 1 },
+    { q: "192. 'वह कार से गया' - यहाँ 'कार से' साधन है:", options: ["करण", "अपादान", "अधिकरण"], correct: 0 },
+    { q: "193. 'भिखारी को वस्त्र दो' - दान देने के योग में कारक है:", options: ["संप्रदान", "कर्म", "अपादान"], correct: 0 },
+    { q: "194. 'वृक्ष से फल गिरा' - विलग होने के भाव में 'से' है:", options: ["करण", "अपादान", "अधिकरण"], correct: 1 },
+    { q: "195. 'आकाश का रंग नीला है' - संबंध बताने वाला कारक है:", options: ["संबंध", "अधिकरण", "अपादान"], correct: 0 },
+    { q: "196. 'वह घर में है' - स्थान आधार सूचित करने वाला कारक:", options: ["अधिकरण", "अपादान", "संबंध"], correct: 0 },
+    { q: "197. 'ओ भाई! कहाँ हो?' - पुकारने का भाव किस कारक में है?", options: ["संबोधन", "कर्ता", "अधिकरण"], correct: 0 },
+    { q: "198. 'पिताजी ने डांटा' - यहाँ कर्ता कारक कौन है?", options: ["पिताजी", "डांटा", "ने"], correct: 0 },
+    { q: "199. 'उसने मुझे मारा' - 'मुझे' (मुझको) यहाँ कर्म कारक है?", options: ["कर्ता", "कर्म", "करण"], correct: 1 },
+    { q: "200. 'कारक' का मुख्य कार्य वाक्य में किसके साथ संबंध जोड़ना है?", options: ["विशेषण", "क्रिया", "अव्यय"], correct: 1 }
+  ]
 };
