@@ -1,5 +1,5 @@
 /**
- * DoneWord.js - Complete Descriptive Edition (All Classes)
+ * GoneWord.js - Complete Descriptive Edition (All Classes)
  * Topic: अनेक शब्दों के लिए एक शब्द (One Word Substitution)
  */
 
