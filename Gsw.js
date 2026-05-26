@@ -24,6 +24,8 @@ const assets = [
   '/Gparyayvachi.js',
   '/Gvilom.js',
   '/Gmuhavare.js',
+  '/Goneword.js',
+  '/GwordPairs.js',
   '/GpartsOfSpeech.js',
   '1775329806019.png'
   // यहाँ अपनी अन्य टॉपिक फाइल्स और लोगो के नाम भी जोड़ें
