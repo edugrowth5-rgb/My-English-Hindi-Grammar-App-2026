@@ -7,7 +7,7 @@
 if (typeof English === 'undefined') { window.English = {}; }
 
 English.degreeOfComparison = {
-    title: "Degree of Comparison: 300+ Master Vault 📊",
+    title: "Degree of Comparison: 50+ Master Vault 📊",
     content: `
         <section style="text-align: left; padding: 15px; font-family: 'Segoe UI', sans-serif;">
             
