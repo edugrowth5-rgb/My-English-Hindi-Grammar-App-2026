@@ -13,7 +13,7 @@ English.degreeOfComparison = {
             
             <div style="background: #f0fdf4; padding: 20px; border-radius: 15px; border-left: 6px solid #16a34a; margin-bottom: 20px;">
                 <p style="font-size: 1.1rem; margin:0;">
-                    <b>💡 प्रो-टिप:</b> इस मास्टर लिस्ट में 300+ एडजेक्टिव्स हैं। <b>Zebra Pattern</b> का उपयोग किया गया है ताकि पढ़ने में आसानी हो। यह फाइल <b>GdegreeOfComparison.js</b> नाम से सुरक्षित है।
+                    <b>💡 प्रो-टिप:</b> इस मास्टर लिस्ट में 50+ एडजेक्टिव्स हैं। <b>Zebra Pattern</b> का उपयोग किया गया है ताकि पढ़ने में आसानी हो। यह फाइल <b>GdegreeOfComparison.js</b> नाम से सुरक्षित है।
                 </p>
             </div>
 
