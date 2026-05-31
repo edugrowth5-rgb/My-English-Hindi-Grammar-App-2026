@@ -15,6 +15,7 @@ const assets = [
   '/Gnoun.js',
   '/Gpronoun.js',
   '/Gadjective.js',
+  '/GdegreeOfComparison.js',
   '/GverbForms.js',
   '/Gverb.js',
   '/Gadverb.js'
